@@ -1,5 +1,5 @@
 
-function sortearRider() {
+function randomRider() {
     let conteudoTitulo = document.getElementById("campeao");
     let imagem = document.querySelector("#image");
 

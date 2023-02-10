@@ -2,10 +2,19 @@
 function sortearRider() {
     let conteudoTitulo = document.getElementById("campeao");
     let imagem = document.querySelector("#image");
+
+    //Alterando a imagem de fundo
+    const sheet = new CSSStyleSheet();
+    sheet.insertRule(`html {
+    background-image: url("./src/backgroud/champion.png");
+    }`);
+    document.adoptedStyleSheets = [sheet];
+    
+    //Sorteando um piloto
     const riders = [1, 5, 10, 12, 20, 21, 23, 25, 30, 33, 36, 37, 41, 42, 43, 44, 49, 72, 73, 88, 89, 93];
     let rider = Math.random() * 22;
     let champion = riders[Math.round(rider)];
-    
+
     switch(champion){
         case 1:
             conteudoTitulo.innerHTML = "Francesco Bagnaia #63";
@@ -36,7 +45,7 @@ function sortearRider() {
             imagem.setAttribute('src', './src/riders/23_Enea_Bastianini.png');
             break;
         case 25:
-            conteudoTitulo.innerHTML = "RAul Fernandez #25";
+            conteudoTitulo.innerHTML = "Raul Fernandez #25";
             imagem.setAttribute('src', './src/riders/25_Raul_Fernandez.png');
             break;
         case 30:

@@ -106,3 +106,41 @@ function randomRider() {
             break;
     }
 }
+
+function changeBackgroundColorBlack(){
+    const sheet = new CSSStyleSheet();
+    sheet.insertRule(`html {
+        background-color: black;
+        }`);
+    sheet.insertRule(`h1 {
+        color: white;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+    }`);
+    sheet.insertRule(`h2 {
+        color: white;
+        text-align: center;
+        font-size: 3rem;
+    }`);
+    document.adoptedStyleSheets = [sheet];
+}
+
+function changeBackgroundColorWhite(){
+    const sheet = new CSSStyleSheet();
+    sheet.insertRule(`html {
+        background-color: white;
+    }`);
+    sheet.insertRule(`h1 {
+        color: black;
+        font-size: 5rem;
+        font-weight: 900;
+        text-align: center;
+    }`);
+    sheet.insertRule(`h2 {
+        color: black;
+        text-align: center;
+        font-size: 3rem;
+    }`);
+    document.adoptedStyleSheets = [sheet];
+}

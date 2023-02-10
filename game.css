@@ -5,20 +5,14 @@
 }
 
 html {
-    /* background-image:url(./src/backgroud/mugello.png); */
     background-color: black;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: 900;
-    text-decoration: white;
-    text-align: center;
-}
-
-h2 {
-    text-align: center;
-    font-size: 3rem;
+    text-decoration: underline;
+    color: white;
 }
 
 section {
@@ -27,16 +21,15 @@ section {
     margin-top: 100px;
     border-radius: 8px;
     background-color: rgb(17, 17, 17);
-    
 }
 
 div.rider-unknow {
-    margin-top: 50px;
+    margin-top: 20px;
     text-align: center;
 }
 
 .game {
-    height: 1150px;
+    height: 1110px;
     text-align: center;
     font-size: 1rem;
 }
@@ -46,5 +39,11 @@ div.rider-unknow {
 }
 
 .button-jogar {
-    margin-top: 50px;
+    margin-top: 25px;
+    border: none;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color:gold;
 }

@@ -5,20 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MotoGP Game</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./game.css">
 </head>
 <body>
     <main>
         <section class="game">
             <div>
                 <h1 id="campeao">Quem será o campeão ?</h1>
+                <button class="button-jogar" onclick="sortearRider()">SORTEAR CAMPEÃO</button>
             </div>
             <div class="rider-unknow">
-                <img src="./src/game/rider_unknow.png" alt="">
-                
-            </div>
-            <div class="button-jogar">
-                <button onclick="sortearRider()">Jogar</button>
+                <img id="image" src="./src/game/rider_unknow.png">
             </div>
         </section>
     </main>

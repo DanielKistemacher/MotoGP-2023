@@ -4,18 +4,327 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MotoGP Game</title>
-    <link rel="stylesheet" href="./game.css">
+    <title>MotoGP 2023</title>
+    <link rel="icon" href="./src/icon.png">
+
+    <link rel="stylesheet" href="./styles.css">
+
 </head>
 <body>
+    <header>
+        <button  onclick="changeBackgroundColorWhite()" class="buttonWhite"></button>
+        <button  onclick="changeBackgroundColorBlack()" class="buttonBlack"></button>
+        <div>
+            <a
+                target="_blank" 
+                href="https://www.motogp.com/">
+                <img src="./src/LogoMotoGP.png" alt="Logotipo MotoGP" title="MotoGP">
+            </a>
+        </div>
+    </header>
+
     <main>
-        <section class="game">
+        <section class="sectionPilotos">
             <div>
-                <h1 id="campeao">Quem será o campeão ?</h1>
-                <button class="button-jogar" onclick="randomRider()">SORTEAR CAMPEÃO</button>
+                <h2>
+                    Pilotos
+                </h2>
+                <p>
+                    Pilotos da temporada 2023.
+                </p>
+                <ul class="pilotos-list">
+                    <li>
+                        <a 
+                            href="./Pilotos/francesco_bagnaia.html">
+                            <img src="./src/Pilotos/FB63_index.png" alt="Francesco Bagnaia" title="Francesco Bagnaia">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/johann_zarco.html">
+                            <img src="./src/Pilotos/JZ05_index.png" alt="Johann Zarco" title="Johann Zarco">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/luca_marini.html">
+                            <img src="./src/Pilotos/LM10_index.png" alt="Luca Marini" title="Luca Marini">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/maverick_vinales.html">
+                            <img src="./src/Pilotos/MV12_index.png" alt="Maverick Viñales" title="Maverick Viñales">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/fabio_quartararo.html">
+                            <img src="./src/Pilotos/FQ20_index.PNG" alt="Fábio Quartararo" title="Fábio Quartararo">
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/franco_morbidelli.html">
+                            <img src="./src/Pilotos/FM21_index.png" alt="Franco Morbidelli" title="Franco Morbidelli">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/enea_bastianini.html">
+                            <img src="./src/Pilotos/EB23_index.png" alt="Enea Bastianini" title="Enea Bastianini">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/remy_gardner.html">
+                            <img src="./src/Pilotos/RF25_index.png" alt="Raul Fernandez" title="Raul Fernandez">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/takaaki_nakagami.html">
+                            <img src="./src/Pilotos/TN30_index.png" alt="Takaki Nakaagami" title="Takaki Nakaagami">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/brad_binder.html">
+                            <img src="./src/Pilotos/BB33_index.png" alt="Brad Binder" title="Brad Binder">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/joan_mir.html">
+                            <img src="./src/Pilotos/JM36_index.png" alt="Joan Mir" title="Joan Mir">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/joan_mir.html">
+                            <img src="./src/Pilotos/AF37_index.png" alt="Augusto Fernandez" title="Augusto Fernandez">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/aleix_espargaro.html">
+                            <img src="./src/Pilotos/AE41_index.png" alt="Aleix Espargaro" title="Aleix Espargaro">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/alex_rins.html">
+                            <img src="./src/Pilotos/AR42_index.png" alt="Alex Rins" title="Alex Rins">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/jack_miller.html">
+                            <img src="./src/Pilotos/JM43_index.png" alt="Jack Miller" title="Jack Miller">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/pol_espargaro.html">
+                            <img src="./src/Pilotos/PE44_index.png" alt="Pol Espargaro" title="Pol Espargaro">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/fabio_di_giannantonio.html">
+                            <img src="./src/Pilotos/FD49_index.png" alt="Fábio Di Giannantonio" title="Fábio Di Giannantonio">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/marco_bezzecchi.html">
+                            <img src="./src/Pilotos/MB72_index.png" alt="Marco Bezzecchi" title="Marco Bezzecchi">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/alex_marquez.html">
+                            <img src="./src/Pilotos/AM73_index.png" alt="Alex Marquez" title="Alex Marquez">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/miguel_oliveira.html">
+                            <img src="./src/Pilotos/MO88_index.png" alt="Miguel Oliveira" title="Miguel Oliveira">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/jorge_martin.html">
+                            <img src="./src/Pilotos/JM89_index.png" alt="Jorge Martin" title="Jorge Martin">                        
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="./Pilotos/marc_marquez.html">
+                            <img src="./src/Pilotos/MM93_index.png" alt="Marc Marquez" title="Marc Marquez">
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="rider-unknow">
-                <img id="image" src="./src/game/rider_unknow.png">
+        </section>
+
+        <section class="sectionGame">
+            <div>
+                <h2>Game</h2>
+                <p>Veja qual piloto será o campeão da temporada 2023 do MotoGP.</p>
+                <button class="buttonJogar" onclick="window.open('./game.html')">Jogar agora</button>
+            </div>
+        </section>
+        <section class="sectionEquipes">
+            <div>
+                <h2>
+                    Equipes
+                </h2>
+                <p>
+                    Equipes da temporada 2023.
+                </p>
+                <ul class="equipes-list">
+                    <li>
+                        <p>
+                            Aprilia Racing
+                        </p>
+                        <a 
+                            href="./Equipes/aprilia.html">
+                            <img src="./src/Equipes/Aprilia.png" alt="Equipe Aprilia Racing" title="Equipe Aprilia Racing">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            Ducati Lenovo Team
+                        </p>
+                        <a 
+                            href="./Equipes/ducati.html">
+                            <img src="./src/Equipes/Ducati.png" alt="Equipe Ducati" title="Equipe Ducati">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            GASGAS Factory
+                        </p>
+                        <a 
+                            href="./Equipes/ducati.html">
+                            <img src="./src/Equipes/GASGAS.PNG" alt="Equipe Ducati" title="Equipe Ducati">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            Gresini
+                        </p>
+                        <a 
+                            href="./Equipes/gresini.html">
+                            <img src="./src/Equipes/Gresini.png" alt="Equipe Gresini" title="Equipe Gresini">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            LCR Honda
+                        </p>
+                        <a 
+                            href="./Equipes/lcr_honda.html">
+                            <img src="./src/Equipes/LCR_Honda.png" alt="Equipe LCR Honda" title="Equipe LCR Honda ">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            Monster Yamaha
+                        </p>
+                        <a
+                            href="./Equipes/yamaha.html">
+                            <img src="./src/Equipes/Yamaha.png" alt="Equipe Yamaha" title="Equipe Yamaha">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            Mooney VR46
+                        </p>
+                        <a 
+                            href="./Equipes/vr46.html">
+                            <img src="./src/Equipes/VR46.png" alt="Equipe VR46" title="Equipe VR46">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            Prima Pramac Racing
+                        </p>
+                        <a 
+                            href="./Equipes/pramac.html">
+                            <img src="./src/Equipes/Pramac.png" alt="Equipe Pramac" title="Equipe Pramac">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            Red Bull KTM
+                        </p>
+                        <a 
+                            href="./Equipes/ktm.html">
+                            <img src="./src/Equipes/KTM.png" alt="Equipe KTM" title="Equipe KTM">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            Repsol Honda Team
+                        </p>
+                        <a 
+                            href="./Equipes/honda.html">
+                            <img src="./src/Equipes/Honda.png" alt="Equipe Honda" title="Equipe Honda">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            RNF MotoGP
+                        </p>
+                        <a 
+                            href="./Equipes/honda.html">
+                            <img src="./src/Equipes/RNF.PNG" alt="Equipe Honda" title="Equipe Honda">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="sectionMidia">
+            <div>
+                <h2>
+                    Mídia
+                </h2>
+                <ul class="midia-list">
+                    <li>
+                        <p>
+                            Fausto Macieira
+                        </p>
+                        <a
+                            target="_blank" 
+                            href="https://www.youtube.com/c/FaustoMacieiraMundomoto/featured">
+                            <img src="./src/Midias/YTB.png" alt="Canal Fausto Macieira" title="Fausto Macieira">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            MotoGP
+                        </p>
+                        <a
+                            target="_blank" 
+                            href="https://www.motogp.com/">
+                            <img src="./src/LogoMotoGP.png" alt="Site MotoGP" title="MotoGP">
+                        </a>
+                    </li>
+                    <li>
+                        <p>
+                            ESPN
+                        </p>
+                        <a
+                            target="_blank" 
+                            href="https://www.espn.com.br/motogp/">
+                            <img src="./src/Midias/espn.png" alt="Site ESPN" title="ESPN">
+                        </a>
+                    </li>
+                    <li></li>
+                </ul>
             </div>
         </section>
     </main>

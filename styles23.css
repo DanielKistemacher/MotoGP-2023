@@ -1,0 +1,55 @@
+* { /*LIMPANDO O CSS*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+}
+
+div {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.buttonBlack{
+    background-color: black;
+    border-color: gray;
+}
+
+.buttonWhite{
+    background-color: white;
+    border-color: gray;
+}
+
+.flags {
+    margin-top: 2px;;
+    width: 50px;
+    height: 50px;
+}
+
+.calendario {
+    background-image: url("./src/backgroud/mugello.png");
+    background-repeat: no-repeat;
+}

@@ -8,17 +8,10 @@ ul { /*REMOVER OS PONTINHOS DA LISTA*/
     list-style: none;
 }
 
-section ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-}
-
 body {
-    background-position: top center;
     background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-color: black;
+    background-repeat:inherit ;
+    background-image: linear-gradient(90deg, #010102 0%, #686b70 50.52%,  #ffffff 100% );
 }
 
 body * {
@@ -27,19 +20,15 @@ body * {
 }
 
 header {
-    padding-top: 2px;
-    height: calc(120px + 32px);
+    padding-top: 32px;
+    height: calc(120px + 60px);
     border-radius: 50%;
 }
 
-header div:hover{
-    transform: scale(1.1);
-}
-
 header div {
-    width: 150px;
+    width: 190px;
     margin: auto;
-    background-image: linear-gradient(to right, #b92b27, #1565c0);
+    background-image: linear-gradient(90deg, #db0c4c 0%, #686b70 50.52%,  #ffffff 100% );
     border-radius: 50%;
     display: flex;
     transition: transform .4s;
@@ -52,23 +41,33 @@ header div img {
     display: flex;
 }
 
+header div:hover{
+    transform: scale(1.1);
+}
+
 main {
-    max-width:680px;
+    max-width: 580px;
     width: 90%;
-    margin: 52px auto;
+    margin: 32px auto;
+
     display: grid;
     gap: 24px;
 }
 
-section {
-    color: white;
-    background: linear-gradient(to right, #b92b27, #1565c0);
-    padding-top: 4px;
-    border-radius: 10px;
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-top: 24px;
 }
 
-.sectionMidia{
-    align-items: center;
+section {
+    color: white;
+    background-image: linear-gradient(90deg, #db0c4c 0%, #686b70 50.52%,  #ffffff 100% );
+    padding-top: 4px;
+    border-radius: 10px;
+    margin-top: 32px;
 }
 
 section div {
@@ -76,6 +75,11 @@ section div {
     padding: 32px;
     padding-top: 24px;
     border-radius: 8px;
+}
+
+section div img:hover{
+    transform: scale(1.1);
+    transition: transform .4s;
 }
 
 section h2 {
@@ -95,60 +99,20 @@ section ul {
 }
 
 section ul li {
+    width: 150px;
     transition: transform .4s;
 }
 
-section ul li:hover {
-    transform: scale(1.1);
-}
-
-.pilotos-list img {
-    width: 130px;
-    border-radius: 8px;
-}
-
-.equipes-list img {
-    width: 150px;
-    border-radius: 10px;
-    border: 1px solid #443e54;
-}
-
-.midia-list img {
-    width: 90px;
-    border-radius: 50%;
-    border: 1px solid #443e54;
-}
-
-.buttonBlack{
-    margin-top: 10px;
+.flag {
+    position: absolute;
     margin-left: 10px;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: black;
-    border-color: gray;
+    margin-top: -7px;
 }
 
-.buttonWhite{
-    margin-top: 10px;
-    margin-left: 10px;
-    padding: 10px;
-    border-radius: 50%;
-    background-color: white;
-    border-color: gray;
+a {
+    color: #686b70;
 }
 
-.buttonJogar{
-    color: aliceblue;
-    display: flex;
-    margin-top: 30px;
-    margin-left: 40%;
-    padding: 20px;
-    font-weight: bold;
-    border-radius: 10%;
-    border-color:#1565c0;
-    background: linear-gradient(to right, #b92b27, #1565c0);
-    font-size: large;
-}
 /* =============== ANIMAÇÃO =============== */
 
 header div {
@@ -165,10 +129,6 @@ main section:nth-child(1) {
 
 main section:nth-child(2) {
     animation-delay: .4s;
-}
-
-main section:nth-child(3) {
-    animation-delay: .8s;
 }
 
 @keyframes fromTop {

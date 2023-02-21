@@ -149,6 +149,18 @@ section ul li:hover {
     background: linear-gradient(to right, #b92b27, #1565c0);
     font-size: large;
 }
+
+.calendario {
+    margin-left: 40%;
+}
+
+.circuito {
+    margin-left: 15%;
+}
+
+h3{
+    font-size: medium;
+}
 /* =============== ANIMAÇÃO =============== */
 
 header div {

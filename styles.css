@@ -150,6 +150,10 @@ section ul li:hover {
     font-size: large;
 }
 
+.buttonJogar:hover{
+    transform: scale(1.1);
+}
+
 .calendario {
     margin-left: 40%;
 }

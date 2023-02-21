@@ -123,5 +123,11 @@ function changeBackgroundColorWhite(){
     sheet.insertRule(`body {
         background-color: white;
     }`);
+    sheet.insertRule(`section div {
+        background-color: white;
+        padding: 32px;
+        padding-top: 24px;
+        border-radius: 8px;
+    }`);
     document.adoptedStyleSheets = [sheet];
 }
